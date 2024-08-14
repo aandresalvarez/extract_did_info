@@ -1,0 +1,23 @@
+name: starr
+version: 1.0.0
+config-version: 2
+
+dataset1:
+  tables_to_deid:
+    - table_id: table1
+      col_deid_operations:
+        - col_id: column1
+          op_name: deid_operation1
+        - col_id: column2
+          op_name: deid_operation2
+      col_no_deid:
+        - col_id: column3
+
+dataset2:
+  tables_to_deid:
+    - table_id: table2
+      col_deid_operations:
+        - col_id: columnA
+          op_name: deid_operationA
+      col_no_deid:
+        - col_id: columnB
